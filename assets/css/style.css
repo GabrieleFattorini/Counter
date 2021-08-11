@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px 200px;
+}
+
+::-moz-selection {
+    background: #fbabaf;
+    color: white;
+}
+    
+::selection {
+    background: #fbabaf;
+    color: white; 
+}
+
+p::-moz-selection, b::-moz-selection, i::-moz-selection {
+    background: #969aff;
+    color: white;
+}
+    
+p::selection, b::selection, i::selection {
+    background: #969aff;
+    color: white; 
+}
+
+/****************************** TEXT *******************************/
+
+#text {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #969aff;
+}
+
+h1 span {
+    font-weight: 600;
+    color: #fbabaf;
+    font-size: 60px;
+}
+
+img {
+    align-self: flex-end;
+    width: 35%;
+    padding-top: 50px;
+    opacity: 0.4;
+    animation: bigger 5s infinite ease-in-out;
+}
+
+@keyframes bigger {
+    0%, 100% {opacity: 0.4;}
+    1% {opacity: 1;}
+    5% {transform: scale(105%);}
+    20% {opacity: 0.4; transform: scale(100%);}
+}
+
+/****************************** COUNTER *******************************/
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: rgb(255,182,150);
+    background: linear-gradient(270deg, rgba(255,182,150,1) 0%, rgba(251,171,175,1) 60%);
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgb(218, 216, 216);
+}
+
+#number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #260934;
+    width: 400px;
+    height: 220px;
+    font-size: 100px;
+    border-radius: 30px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 45px;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    color: #fff;
+}
+
+#buttons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 10px;
+    width: 400px;
+    height: 200px;
+}
+
+#buttons > button {
+    cursor: pointer;
+    width: 180px;
+    height: 160px;
+    border-radius: 25px;
+    border: none;
+    font-size: 50px;
+    color: #26083485;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all ease-in-out 0.20s;
+}
+
+#buttons > button:hover {
+    color: #260834;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#buttons > button:active {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: scale(95%);
+    color: #969aff;
+}
+
+#reset {
+    margin-top: 50px;
+}
+
+#reset > button {
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    /*background: rgb(255,182,150);
+    background: linear-gradient(270deg, rgba(255,182,150,1) 0%, rgba(251,171,175,1) 60%);*/
+    background: rgb(150,154,255);
+    color: #fff;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0px 10px 20px rgb(218, 216, 216);
+    transition: all ease-in-out 0.20s;
+    opacity: 0.5;
+}
+
+#reset > button:hover {
+    opacity: 1;
+    box-shadow: 0px 10px 40px rgb(201, 199, 199);
+    transform: translateY(-8px);
+}
+
+#reset > button:active {
+    transform: scale(95%);
+}
+
+/****************************** OTHER CLASSES *******************************/
+
+.pulse {
+    font-size: 120px !important;
+    color: #969aff !important;
+}
+
+.error {
+    transform: rotate(5deg) translateX(-9px) translateY(17px);
+    color: #26083427 !important
+}
+
+/****************************** MEDIA QUERY *******************************/
+
+@media (max-width: 1500px) {
+
+    body {
+        padding: 0 50px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    #text {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 7px
+    }
+
+    #counter, #number, #buttons {
+        width: 100%;
+    }
+
+}
