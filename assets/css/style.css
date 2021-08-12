@@ -207,14 +207,39 @@ p {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
 
     body {
-        padding: 7px
+        padding: 0px !important
     }
 
-    #counter, #number, #buttons {
-        width: 100%;
+    #counter{
+        width: 300px;
+        height: 500px;
+    }
+
+    #number {
+        width: 300px;
+        height: 180px;
+        font-size: 90px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 55px;
+    }
+
+    #buttons {
+        bottom: 6px;
+        width: 295px;
+        height: 95px;
+    }
+
+    #buttons > button {
+        width: 140px;
+        height: 120px;
+        justify-content: space-around;
+        font-size: 40px;
     }
 
 }
