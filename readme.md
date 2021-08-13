@@ -19,8 +19,11 @@ Here is a working live demo:  https://fattorini-counter.web.app
 ## Mockups
 <br>
 
-![WebApp](https://github.com/GabrieleFattorini/Counter/blob/main/assets/img/pc.png)
+The web app is adapted for all devices, as can be seen in these mockups.
+<br>
 
+![WebApp](https://github.com/GabrieleFattorini/Counter/blob/main/assets/img/pc.png)
+![WebApp](https://github.com/GabrieleFattorini/Counter/blob/main/assets/img/mobile.png)
 
 <br>
 
