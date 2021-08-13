@@ -1,4 +1,4 @@
-![WebApp](https://github.com/GabrieleFattorini/Counter/blob/main/assets/img/Preview.PNG)
+![WebApp](https://github.com/GabrieleFattorini/Counter/blob/main/assets/img/preview.png)
 
 <br>
 
