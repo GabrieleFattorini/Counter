@@ -19,8 +19,8 @@ Here is a working live demo:  https://fattorini-counter.web.app
 ## Mockups
 <br>
 
-![WebApp](https://github.com/GabrieleFattorini/Counter/blob/main/assets/img/pc.jpg)
-![WebApp](https://github.com/GabrieleFattorini/Counter/blob/main/assets/img/responsive.jpg)
+![WebApp](https://github.com/GabrieleFattorini/Counter/blob/main/assets/img/pc.png)
+![WebApp](https://github.com/GabrieleFattorini/Counter/blob/main/assets/img/responsive.png)
 
 <br>
 
